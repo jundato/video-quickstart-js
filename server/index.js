@@ -19,6 +19,9 @@ var randomName = require('./randomname');
 // Create Express webapp.
 var app = express();
 
+var cors = require('cors');
+app.use(cors());
+
 // Set up the paths for the examples.
 [
   'bandwidthconstraints',
